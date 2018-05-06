@@ -1,0 +1,53 @@
+﻿
+@model ProjetoPrima.Dominio.Cliente
+
+@{
+    ViewBag.Title = "Novo Cliente";
+}
+
+<div class="offset-md-1 col-md-10" style="margin-top: 30px !important">
+    <h3>Novo Cliente</h3>
+    <hr />
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="form-group">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <label>Nome:</label>
+                        @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Data de Nascimento:</label>
+                        @Html.EditorFor(model => model.DataNascimento, "{0:dd/MM/yyyy}", new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                    </div>
+                    <div class="col-md-6">
+                        <label>CPF:</label>
+                        @Html.EditorFor(model => model.CPF, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                    </div>
+                    <div class="col-md-6">
+                        <label>Telefone:</label>
+                        @Html.EditorFor(model => model.Telefone, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                    </div>
+                    <div class="col-md-6">
+                        <label>E-mail:</label>
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @required = "required", @type = "email" } })
+                    </div>
+
+                    <div class="offset-sm-8 col-md-2 espaco">
+                        <input type="submit" value="Gravar" class="btn btn-primary preeche" />
+                    </div>
+                    <div class="col-md-2 espaco">
+                        @Html.ActionLink("Cancelar", "Index", new { area = "" }, new { @class = "btn btn-danger preeche" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

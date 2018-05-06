@@ -1,0 +1,48 @@
+﻿@model IEnumerable<ProjetoPrima.Dominio.Cliente>
+
+@{
+    ViewBag.Title = "Clientes";
+}
+
+<div class="container" style="margin-top: 50px !important;">
+    <div class="row">
+        <div class="offset-md-10 col-md-2">
+            @Html.ActionLink("Novo Cliente", "Cadastrar", "Cliente", new { area = "" }, new { @class = "btn btn-primary botao" })
+        </div>
+        <div class="col-md-12" style="margin-top: 30px">
+            <form>
+                <div class="form-group">
+                <div class="form-group">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col" class="text-center">Idade</th>
+                                <th scope="col">Telefone</th>
+                                <th scope="col">CPF</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Nome</td>
+                                    <td class="text-center">@item.GetIdade()</td>
+                                    <td>@item.Telefone</td>
+                                    <td>@item.CPF</td>
+                                    <td class="acao">@item.Email</td>
+                                    <td class="acao">
+                                        @Html.ActionLink("E", "Editar", "Cliente", new { id = item.Id }, new { @class = "btn btn-primary btn-acao" })
+                                        @Html.ActionLink("X", "Remover", "Cliente", new { id = item.Id }, new { @class = "btn btn-danger btn-acao" })
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

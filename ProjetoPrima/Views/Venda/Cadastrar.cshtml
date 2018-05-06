@@ -1,0 +1,110 @@
+﻿@model ProjetoPrima.Dominio.Venda
+
+@{
+    var carrinho = new List<ProjetoPrima.Dominio.VendaItem>();
+
+    if (TempData["Carrinho"] != null)
+    {
+        carrinho = TempData["Carrinho"] as List<ProjetoPrima.Dominio.VendaItem>;
+    }
+
+    var NumeroDoPedido = Request?.Params["NumeroDoPedido"] ?? "";
+    var itemCarrinhoEhObg = (carrinho?.Count ?? 0) > 0 ? "" : "required";
+}
+
+@{
+    ViewBag.Title = "Nova Venda";
+}
+
+<div class="offset-md-1 col-md-10" style="margin-top: 30px !important">
+    <h3>Nova Venda</h3>
+    <hr />
+</div>
+
+@using (Html.BeginForm("Cadastrar", "Venda", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <label>Número do Pedido:</label>
+                            <input type="text" class="form-control" id="NumeroDoPedido" name="NumeroDoPedido" value="@NumeroDoPedido" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="mtop" style="margin-top: 35px">Data:</label>
+                            <label><strong> @DateTime.Now.ToShortDateString()</strong></label>
+                        </div>
+                        <div class="col-md-12">
+                            <label>Cliente:</label>
+                            @Html.DropDownList("ClienteId", (IEnumerable<SelectListItem>)ViewBag.PriorityID, new { @class = "form-control", @required = "required" })
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Produto:</label>
+                            <input type="text" class="form-control" id="Produto" name="Produto" @itemCarrinhoEhObg>
+                        </div>
+                        <div class="col-md-2">
+                            <label>Quantidade:</label>
+                            <input type="number" class="form-control" id="Quantidade" name="Quantidade" min="1" max="100" @itemCarrinhoEhObg>
+                        </div>
+                        <div class="col-md-3">
+                            <label>Valor Unitário:</label>
+                            <input class="form-control" id="ValorUnitario" name="ValorUnitario" @itemCarrinhoEhObg>
+                        </div>
+                        <div class="col-md-3">
+                            <button name="submit" type="submit" id="adicionar" class="mtop btn btn-success btn-adicionar" value="Adicionar">Adicionar</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form>
+                                <div class="form-group">
+                                    <table class="table">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th scope="col">Produto</th>
+                                                <th scope="col">Qtd</th>
+                                                <th scope="col">Vl. Unitário</th>
+                                                <th scope="col">Vl. Total</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var vendaItem in carrinho)
+                                            {
+                                                <tr>
+                                                    <td>@vendaItem.Produto</td>
+                                                    <td>@vendaItem.Quantidade.ToString("D2")</td>
+                                                    <td>R$ @vendaItem.ValorUnitario.ToString("n")</td>
+                                                    <td>R$ @vendaItem.ValorTotal.ToString("n")</td>
+                                                    <td>
+                                                        <button name="submit" type="submit" id="adicionar" class="btn btn-warning btn-acao centro" style="color: white;" value="Remover;@vendaItem.Id">X</button>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="offset-sm-8 col-md-2 espaco">
+                            <button name="submit" type="submit" id="gravar" class="btn btn-primary preeche" value="Gravar">Gravar</button>
+                        </div>
+                        <div class="col-md-2 espaco">
+                            @Html.ActionLink("Cancelar", "Index", new { area = "" }, new { @class = "btn btn-danger preeche" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

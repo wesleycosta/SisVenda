@@ -1,0 +1,16 @@
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.RepositorioEF.dll.config
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.RepositorioEF.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.RepositorioEF.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\EntityFramework.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.Dominio.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.FuncoesDeTratamento.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.Dominio.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\EntityFramework.xml
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\bin\Debug\ProjetoPrima.FuncoesDeTratamento.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\obj\Debug\ProjetoPrima.RepositorioEF.csprojResolveAssemblyReference.cache
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\obj\Debug\ProjetoPrima.RepositorioEF.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\obj\Debug\ProjetoPrima.RepositorioEF.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\obj\Debug\ProjetoPrima.RepositorioEF.csproj.CoreCompileInputs.cache
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.RepositorioEF\obj\Debug\ProjetoPrima.RepositorioEF.csproj.CopyComplete

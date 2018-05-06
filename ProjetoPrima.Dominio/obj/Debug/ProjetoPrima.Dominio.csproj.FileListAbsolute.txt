@@ -1,0 +1,9 @@
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\bin\Debug\ProjetoPrima.Dominio.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\bin\Debug\ProjetoPrima.Dominio.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\bin\Debug\ProjetoPrima.FuncoesDeTratamento.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\bin\Debug\ProjetoPrima.FuncoesDeTratamento.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\obj\Debug\ProjetoPrima.Dominio.csprojResolveAssemblyReference.cache
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\obj\Debug\ProjetoPrima.Dominio.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\obj\Debug\ProjetoPrima.Dominio.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\obj\Debug\ProjetoPrima.Dominio.csproj.CoreCompileInputs.cache
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Dominio\obj\Debug\ProjetoPrima.Dominio.csproj.CopyComplete

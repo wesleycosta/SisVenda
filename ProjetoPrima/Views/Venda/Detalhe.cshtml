@@ -1,0 +1,75 @@
+﻿@model ProjetoPrima.Dominio.Venda
+
+@{
+    ViewBag.Title = "Exibir Venda";
+
+    var listaItem = ViewData["VendaItem"] as List<ProjetoPrima.Dominio.VendaItem>;
+}
+
+<div class="container">
+    <div class="offset-3 col-md-6">
+        <div class="row">
+            <div class="col-md-12" style="margin-top: 30px;">
+                <h3> Nº do Pedido -  @Model.NumeroDoPedido</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12" style="margin-top: 30px;">
+                <table class="table">
+                    <tr>
+                        <th scope="col">Cliente</th>
+                        <th scope="col" >CPF</th>
+                        <th scope="col" class="text-right">Total</th>
+                    </tr>
+                    <tr>
+                        <td>@Model.Cliente.Nome</td>
+                        <td class="text-center">@Model.Cliente.CPF</td>
+                        <td class="text-right">R$ @Model.ValorTotal</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <table class="table table-hover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Produto</th>
+                                    <th scope="col" class="text-center">Qtd</th>
+                                    <th scope="col" class="text-right">Valor Unitário</th>
+                                    <th scope="col" class="text-right">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var vendaItem in listaItem)
+                                {
+                                    <tr>
+                                        <td>@vendaItem.Produto</td>
+                                        <td class="text-center">@vendaItem.Quantidade.ToString("D2")</td>
+                                        <td class="text-right">R$ @vendaItem.ValorUnitario.ToString("n")</td>
+                                        <td class="text-right">R$ @vendaItem.ValorTotal.ToString("n")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="offset-8 col-md-4 espaco">
+                    @Html.ActionLink("Voltar", "Index", new { area = "" }, new { @class = "btn btn-danger preeche" })
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

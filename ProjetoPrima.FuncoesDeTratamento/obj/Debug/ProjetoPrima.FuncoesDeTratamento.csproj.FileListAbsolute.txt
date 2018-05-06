@@ -1,0 +1,6 @@
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.FuncoesDeTratamento\bin\Debug\ProjetoPrima.FuncoesDeTratamento.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.FuncoesDeTratamento\bin\Debug\ProjetoPrima.FuncoesDeTratamento.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.FuncoesDeTratamento\obj\Debug\ProjetoPrima.FuncoesDeTratamento.csprojResolveAssemblyReference.cache
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.FuncoesDeTratamento\obj\Debug\ProjetoPrima.FuncoesDeTratamento.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.FuncoesDeTratamento\obj\Debug\ProjetoPrima.FuncoesDeTratamento.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.FuncoesDeTratamento\obj\Debug\ProjetoPrima.FuncoesDeTratamento.csproj.CoreCompileInputs.cache

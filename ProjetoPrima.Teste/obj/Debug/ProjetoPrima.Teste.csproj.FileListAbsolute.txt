@@ -1,0 +1,16 @@
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.Teste.exe.config
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.Teste.exe
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.Teste.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.Dominio.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.RepositorioEF.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\EntityFramework.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.Dominio.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.RepositorioEF.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\EntityFramework.xml
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\obj\Debug\ProjetoPrima.Teste.csprojResolveAssemblyReference.cache
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\obj\Debug\ProjetoPrima.Teste.exe
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\obj\Debug\ProjetoPrima.Teste.pdb
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\EntityFramework.SqlServer.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\EntityFramework.SqlServer.xml
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.FuncoesDeTratamento.dll
+D:\PROJETO PRIMA\ProjetoPrima\ProjetoPrima.Teste\bin\Debug\ProjetoPrima.FuncoesDeTratamento.pdb
